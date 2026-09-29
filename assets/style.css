@@ -69,3 +69,20 @@ footer {
 }
 footer a { color: var(--dim); }
 code { background: var(--panel); padding: 2px 6px; border: 1px solid var(--stroke); font-size: 14px; }
+
+/* Guide tables. Dense on purpose — a species table is reference material,
+   not prose — but the wrapper scrolls sideways on a phone rather than
+   squeezing eight columns into 360px. */
+.scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 -20px; padding: 0 20px; }
+.tbl { width: 100%; border-collapse: collapse; margin: 14px 0 26px; font-size: 14px; }
+.tbl th, .tbl td { text-align: left; vertical-align: top; padding: 9px 10px; border-bottom: 1px solid var(--stroke); }
+.tbl th { color: var(--dim); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+.tbl td.n { color: var(--dim); }
+.tbl .sub { color: var(--dim); font-size: 12.5px; margin-top: 2px; }
+.tbl .stars { white-space: nowrap; color: var(--gold); letter-spacing: 1px; }
+.tbl.species { min-width: 860px; }
+.crumb { color: var(--dim); font-size: 14px; margin: 0 0 8px; }
+.crumb a { color: var(--dim); }
+.pager { display: flex; justify-content: space-between; gap: 12px; margin-top: 40px; }
+.pager a { padding: 9px 15px; background: var(--panel); border: 2px solid var(--stroke); text-decoration: none; }
+.gen { font-size: 12.5px; }
