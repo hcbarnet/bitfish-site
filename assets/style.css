@@ -94,7 +94,7 @@ code { background: var(--panel); padding: 2px 6px; border: 1px solid var(--strok
 .fishcard.r4 { border-color: #7a6a2a; }
 .fishcard.r5 { border-color: var(--gold); }
 .fishcard .art { flex: 0 0 104px; display: flex; align-items: center; justify-content: center; background: var(--night); border: 2px solid var(--stroke); min-height: 88px; }
-.fish { width: 96px; height: auto; image-rendering: pixelated; }
+.fish { display: block; max-width: 96px; max-height: 96px; width: auto; height: auto; image-rendering: pixelated; }
 .fishcard .meta { min-width: 0; }
 .fishcard h3 { margin: 0 0 4px; color: var(--cream); font-size: 16px; }
 .fishcard .stars { margin: 0 0 8px; color: var(--gold); letter-spacing: 1px; font-size: 14px; }
@@ -102,5 +102,5 @@ code { background: var(--panel); padding: 2px 6px; border: 1px solid var(--strok
 .fishcard .hint { margin: 0 0 10px; font-size: 14px; line-height: 1.5; }
 .fishcard .chips { margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
 .fishcard .chips span { font-size: 12px; color: var(--dim); background: var(--night); border: 1px solid var(--stroke); padding: 2px 8px; white-space: nowrap; }
-li .fish { width: 36px; vertical-align: middle; margin-right: 4px; }
+li .fish { display: inline-block; max-width: 36px; max-height: 36px; vertical-align: middle; margin-right: 4px; }
 @media (max-width: 400px) { .fishcard { flex-direction: column; } .fishcard .art { flex-basis: auto; } }
